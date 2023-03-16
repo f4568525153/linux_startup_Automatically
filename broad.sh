@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "123bassssssssssssssssssssssssssssssssssh"
+echo "will delay 60 seconds"
 
 /bin/sleep 60
 
