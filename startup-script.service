@@ -1,0 +1,18 @@
+[Unit]
+Description=Startup Script Service
+After=network.target
+
+[Service]
+Type=simple
+#ExecStartPre=/bin/sleep 60
+#ExecStart=/usr/bin/python3 /home/ubilinux/workspace/script/IPBroadcast.py
+ExecStart=/home/ubilinux/workspace/script/broad.sh
+Restart=always
+User=root
+Group=root
+Environment=PATH=/usr/bin:/usr/local/bin
+WorkingDirectory=/home/ubilinux/workspace/script
+
+[Install]
+WantedBy=multi-user.target
+
